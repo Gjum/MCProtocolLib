@@ -9,7 +9,9 @@ It's only maintained every so often, so if you see a fix that applies to 1.12.2 
 
 ## How to use this repository
 
-You can use jitpack.io:
+Builds are available through jitpack.io.
+
+Instead of `1.12.2-LTS-SNAPSHOT` (always the latest) you can use any versioned tag.
 
 ### Maven
 
@@ -26,7 +28,7 @@ You can use jitpack.io:
 <dependency>
     <groupId>com.github.Gjum</groupId>
     <artifactId>MCProtocolLib</artifactId>
-    <version>Tag</version>
+    <version>1.12.2-LTS-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -43,7 +45,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.Gjum:MCProtocolLib:Tag'
+    implementation 'com.github.Gjum:MCProtocolLib:1.12.2-LTS-SNAPSHOT'
 }
 ```
 
