@@ -5,7 +5,7 @@
 
     <groupId>com.github.steveice10</groupId>
     <artifactId>mcprotocollib</artifactId>
-    <version>1.12.2-LTS-1.0-1</version>
+    <version>1.12.2-3-LTS-1.0</version>
     <packaging>jar</packaging>
 
     <name>MCProtocolLib</name>
