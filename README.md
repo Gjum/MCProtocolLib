@@ -1,12 +1,12 @@
-# MCProtocolLib
-MCProtocolLib is a simple library for communicating with a Minecraft client/server. It aims to allow people to make custom bots, clients, or servers for Minecraft easily.
+[![Build Status](https://travis-ci.org/Gjum/MCProtocolLib.svg?branch=1.12.2-LTS)](https://travis-ci.org/Gjum/MCProtocolLib)
 
-## Example Code
-See [example/com/github/steveice10/mc/protocol/test/MinecraftProtocolTest.java](https://github.com/Steveice10/MCProtocolLib/tree/master/example/com/github/steveice10/mc/protocol/test)
+# MCProtocolLib 1.12.2 LTS
 
-## Building the Source
-MCProtocolLib uses Maven to manage dependencies. Simply run 'mvn clean install' in the source's directory.
+This repository offers Long-Term Support for 1.12.2 of MCProtocolLib
+by cherry-picking any compatible mainline fixes onto the last official 1.12.2 version.
+
+It's only maintained every so often, so if you see a fix that applies to 1.12.2 please open an issue. Thanks!
 
 ## License
-MCProtocolLib is licensed under the **[MIT license](http://www.opensource.org/licenses/mit-license.html)**.
 
+MCProtocolLib is licensed under the **[MIT license](http://www.opensource.org/licenses/mit-license.html)**.
