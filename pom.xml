@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.steveice10</groupId>
-    <artifactId>mcprotocollib</artifactId>
-    <version>1.12.2-3-LTS-1.0</version>
+    <groupId>com.github.Gjum</groupId>
+    <artifactId>MCProtocolLib-1.12.2-LTS</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>MCProtocolLib</name>
@@ -44,6 +44,14 @@
         <system>GitHub</system>
         <url>https://github.com/Steveice10/MCProtocolLib/issues</url>
     </issueManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-gjum-minecraft</id>
+            <name>gjum-minecraft</name>
+            <url>https://api.bintray.com/maven/gjum/minecraft/MCProtocolLib-1.12.2-LTS/;publish=1</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
