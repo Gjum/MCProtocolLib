@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  create: # branch or tag created. $GITHUB_REF contains name of branch/tag
+
+jobs:
+  deploy-bintray:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - uses: actions/checkout@v2 # Check out repository into $GITHUB_WORKSPACE
+
+    - name: "configure maven: set bintray access credentials"
+      run: |
+        echo '<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+        <servers><server>
+        <id>bintray-gjum-minecraft</id>
+        <username>gjum</username>
+        <password>${{ secrets.BINTRAY_APIKEY }}</password>
+        </server></servers></settings>' \
+        > ~/.m2/settings.xml
+
+    - name: build and deploy to jcenter/bintray
+      run: mvn javadoc:jar source:jar deploy
