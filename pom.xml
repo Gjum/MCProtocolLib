@@ -130,6 +130,7 @@
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
+                        <phase>deploy</phase>
                         <goals>
                             <goal>aggregate</goal>
                             <goal>jar</goal>
@@ -138,8 +139,6 @@
                 </executions>
                 <configuration>
                     <show>public</show>
-                    <failOnError>false</failOnError>
-                    <additionalOptions>-html5</additionalOptions>
                 </configuration>
             </plugin>
             <plugin>
@@ -149,6 +148,7 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
+                        <phase>deploy</phase>
                         <goals>
                             <goal>jar</goal>
                         </goals>
